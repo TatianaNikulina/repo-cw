@@ -1,0 +1,156 @@
+a {
+  text-decoration: none;
+}
+
+section {
+  height: 30px;
+  border: 1px solid #93329e;
+  margin-bottom: 10px;
+}
+
+/*  pseudo classes */
+a:visited {
+  color: green;
+}
+
+a:active {
+  background-color: #93329e;
+  border-bottom: 1px solid #93329e;
+  padding-bottom: 5px;
+}
+a:hover {
+  color: red;
+}
+
+a:focus {
+  border-bottom: 1px solid #93329e;
+  padding-bottom: 5px;
+  outline: none;
+}
+
+h1:hover {
+  border-bottom: 1px solid #93329e;
+  padding-bottom: 5px;
+}
+
+.first li:first-child {
+  color: red;
+}
+
+.first li:last-child {
+  color: blue;
+}
+
+.first li:nth-child(3) {
+  color: yellow;
+}
+
+li {
+  list-style: none;
+}
+
+.second li:nth-child(odd) {
+  /* odd - even */
+  background-color: #ffe3fe;
+}
+
+.third li:nth-child(2n + 3) {
+  background-color: #ffe3fe;
+}
+
+section:nth-child(even) {
+  background-color: red;
+}
+
+input:checked + label {
+  color: red;
+}
+
+input:required + label {
+  color: blue;
+  font-weight: 900;
+}
+
+/* Pseudo elements */
+
+p::selection {
+  color: #93329e;
+  background-color: #ffe3fe;
+}
+
+p::first-letter {
+  font-size: 36px;
+  color: red;
+}
+
+p::first-line {
+  text-decoration: underline;
+}
+
+h1::before {
+  content: "Content, ";
+}
+
+h1::after {
+  content: " my dear World!!!";
+}
+
+.before-element {
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+  position: relative;
+  background-color: gray;
+}
+
+.before-element::before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: blue;
+  top: 35px;
+  right: 35px;
+  border-radius: 50%;
+  z-index: 5;
+}
+
+.before-element::after {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  background-color: red;
+  top: 30px;
+  right: 30px;
+  border-radius: 50%;
+  /* z-index: 0; */
+}
+
+.pdf-download {
+  position: relative;
+}
+
+li {
+  position: relative;
+}
+
+.pdf-download:before,
+li:before {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  background-image: url("https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/267px-PDF_file_icon.svg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center center;
+  position: absolute;
+  top: 50%;
+  margin-top: -5px;
+  left: -15px;
+}

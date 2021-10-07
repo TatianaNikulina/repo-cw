@@ -1,0 +1,74 @@
+/* body {
+  font-family: "Lato", sans-serif;
+} */
+/* 
+h5 {
+    font-family: 'Lato', sans-serif;
+} */
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+body * {
+  box-sizing: border-box;
+}
+
+.wrapper {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.header {
+  background-image: url("../images/bg-image.jpg");
+  background-position: top right;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 100px 0;
+}
+
+.title1 {
+  color: #111;
+  font-family: "Oswald", sans-serif;
+  font-size: 36px;
+  font-weight: 200;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.title2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 150px;
+  color: #179bd6;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  font-weight: 900;
+}
+
+.text {
+  width: 55%;
+  text-align: justify;
+  /* font-family: "Open Sans", sans-serif; */
+  font-size: 16px;
+  font-style: italic;
+  line-height: 1.5;
+  margin-bottom: 50px;
+}
+
+/* все ссылки внутри текста .text */
+.text a {
+  font-style: normal;
+  color: #179bd6;
+  text-decoration: none; /*нет подчеркивания ссылки*/
+}
+
+.link-window {
+  font-size: 16px;
+  color: white;
+  background-color: #179bd6;
+  text-transform: uppercase;
+  padding: 10px 25px;
+  text-decoration: none;
+}

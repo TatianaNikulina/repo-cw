@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms</title>
+  </head>
+  <body style="padding: 100px">
+    <form action="#" method="GET">
+      <!-- GET, POST -->
+      <div>
+        <label for="first-name">First Name</label>
+        <input type="text" id="first-name" name="IMYA" />
+      </div>
+      <div>
+        <label for="last-name">Last Name</label>
+        <input
+          type="text"
+          id="last-name"
+          name="FAMILIYA"
+          placeholder="Enter Your Last Name"
+          title="Hello World!"
+          class="form-input"
+        />
+      </div>
+
+      <div>
+        <label for="password">Password</label>
+        <input type="password" name="password" id="password" />
+      </div>
+
+      <!-- кнопочки -->
+      <div>
+        <p>Sex</p>
+        <label for="man">Man</label>
+        <input type="radio" name="sex" id="man" value="man" checked />
+        <label for="woman">Woman</label>
+        <input type="radio" name="sex" id="woman" value="woman" />
+      </div>
+
+      <div>
+        <p>Programming Language</p>
+        <label for="java">Java</label>
+        <input type="checkbox" name="language" id="java" value="java" />
+        <br />
+        <label for="c-sharp">C#</label>
+        <input type="checkbox" name="language" id="c-sharp" value="c-sharp" />
+        <br />
+        <label for="javascript">Javascript</label>
+        <input
+          type="checkbox"
+          name="language"
+          id="javascript"
+          value="javascript"
+          checked
+        />
+        <br /><label for="python">Python</label>
+        <input type="checkbox" name="language" id="python" value="python" />
+      </div>
+
+      <div>
+        <label for="birthday">Birthday</label>
+        <input type="number" name="birthday" id="birthday" />
+      </div>
+      <div>
+        <input type="date" name="date-picker" id="date-picker" />
+      </div>
+
+      <div>
+        <label for="photo">Photo</label>
+        <input type="file" name="photo" id="photo" />
+      </div>
+
+      <div>
+        <label for="bio">Biography</label>
+        <textarea name="bio" id="bio" cols="30" rows="5"></textarea>
+      </div>
+
+      <div>
+        <label for="country">Country</label>
+        <select name="country" id="country">
+          <option>Choose your country</option>
+          <option value="germany">Germany</option>
+          <option value="russia">Russia</option>
+          <option value="belarus">Belarus</option>
+          <option value="kazakhstan">Kazakhstan</option>
+        </select>
+      </div>
+
+      <div>
+        <input type="range" min="100" max="10000" name="range" />
+      </div>
+
+      <div>
+        <input type="color" name="color" id="color" />
+      </div>
+
+      <button type="submit">Go</button>
+    </form>
+  </body>
+</html>

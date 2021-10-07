@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Index-css-file</title>
+
+    <!-- подключили таблицу стилей -->
+    <link rel="stylesheet" href="./style.css" />
+
+    <!-- переопределили стиль конкретно для этого файла -->
+    <style>
+      .red {
+        color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- станет зеленым, потому что переопределили тут. Высший приоритет -->
+    <div class="red" style="color: cadetblue">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur
+      tenetur voluptatem quod exercitationem numquam magni blanditiis ab
+      dignissimos dolor est iste eligendi iure rem aliquam sint, sunt ullam
+      sapiente quas velit quidem atque. Voluptates, omnis minima rem illo maxime
+      facere dolor iure exercitationem consequuntur temporibus repudiandae
+      voluptate consequatur asperiores autem, est eius accusantium? Quia iste
+      tenetur veritatis ipsam, dignissimos ducimus deleniti veniam architecto
+      nulla, dolores natus totam nam, delectus magnam a mollitia cupiditate?
+      Voluptate, enim nisi accusamus quasi voluptatem esse maiores cum iste
+      eveniet laudantium! Libero suscipit maiores distinctio repudiandae vero
+      accusantium culpa, a corporis expedita provident deleniti officia.
+    </div>
+
+    <div class="red fine">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo, pariatur
+      tenetur voluptatem quod exercitationem numquam magni blanditiis ab
+      dignissimos dolor est iste eligendi iure rem aliquam sint, sunt ullam
+      sapiente quas velit quidem atque. Voluptates, omnis minima rem illo maxime
+      facere dolor iure exercitationem consequuntur temporibus repudiandae
+      voluptate consequatur asperiores autem, est eius accusantium? Quia iste
+      tenetur veritatis ipsam, dignissimos ducimus deleniti veniam architecto
+      nulla, dolores natus totam nam, delectus magnam a mollitia cupiditate?
+      Voluptate, enim nisi accusamus quasi voluptatem esse maiores cum iste
+      eveniet laudantium! Libero suscipit maiores distinctio repudiandae vero
+      accusantium culpa, a corporis expedita provident deleniti officia.
+    </div>
+
+    <ul>
+      <li>dhihsdhcsdh</li>
+    </ul>
+
+    <!-- .half   будет вот это-->
+    <div class="half">
+      <div class="fine">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae animi
+        magni tempore natus quia incidunt voluptates voluptate quod. Eius
+        voluptatibus nostrum blanditiis itaque atque officiis fuga sequi nemo
+        consequatur voluptatum?
+      </div>
+    </div>
+
+    <!--#half --- <div id="half"></div> -->
+
+    <div class="div1"></div>
+    <div class="div1"></div>
+
+    <footer>&copy; Copyright2021</footer>
+
+    <!DOCTYPE html>
+<html>
+ <head>
+  <meta charset="utf-8">
+  <title>box-sizing</title>
+  <style>
+   .box1 { 
+    background: #f0f0f0; /* Цвет фона */
+    width: 300px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    border: 2px solid #000; /* Параметры рамки */
+   }
+   .box2 { 
+    background: #fc0; /* Цвет фона */
+    width: 300px; /* Ширина блока */
+    padding: 10px; /* Поля */
+    margin-top: 10px; /* Отступ сверху */
+    border: 2px solid #000; /* Параметры рамки */
+    -moz-box-sizing: border-box; /* Для Firefox */  
+    box-sizing: border-box; /* Ширина блока с полями */
+   }
+  </style>
+ </head>
+ <body> 
+  <div class="box1">Ширина с учетом значения свойства width, полей и границ.</div>
+  <div class="box2">Ширина равна значению свойства width.</div>
+ </body>
+</html>
+  </body>
+</html>

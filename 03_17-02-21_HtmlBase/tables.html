@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tables</title>
+  </head>
+  <body>
+    <table border="1" cellspacing="0">
+      <caption>
+        My Table
+      </caption>
+      <!--граница таблички-->
+      <thead>
+        <tr>
+          <!-- table row stroka-->
+          <th>1</th>
+          <!-- table data = jacheika -->
+          <th>2</th>
+          <th>3</th>
+          <th>4</th>
+        </tr>
+      </thead>
+
+      <!-- table>tr*3>td*5 -->
+      <tbody>
+        <tr>
+          <th>Name</th>
+          <th>Age</th>
+          <th>City</th>
+          <th>Street</th>
+        </tr>
+
+        <tr>
+          <td>Lorem ipsum dolor sit amet</td>
+          <td>q</td>
+          <td>w</td>
+          <td>
+            <table border="1">
+              <tr>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+              </tr>
+            </table>
+          </td>
+        </tr>
+
+        <tr>
+          <td align="center">Izolda</td>
+          <td>25</td>
+          <td rowspan="2">Berlin</td>
+          <!--объединить 2 ячейки-->
+          <td>Uliza</td>
+        </tr>
+
+        <tr>
+          <td align="center">Tristan</td>
+          <td>30</td>
+          <!-- <td>Berlin</td> -->
+          <td>Uliza2</td>
+        </tr>
+      </tbody>
+
+      <tfoot>
+        <tr>
+          <!-- <td></td>
+          <td></td> -->
+          <td colspan="3" align="center">Itogo:</td>
+          <!--align = left/center/right/justify-->
+          <td>100000</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <!-- внутри тега Table могут быть только:
+    tr
+    thead
+    tbody
+    tfoot
+    caption -->
+
+    <table></table>
+  </body>
+</html>
